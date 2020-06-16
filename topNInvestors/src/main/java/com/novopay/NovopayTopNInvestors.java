@@ -5,16 +5,16 @@ import java.util.List;
 
 public class NovopayTopNInvestors implements TopNInvestors{
 
-    Node<Person> root;
+    Node<Investor> root;
 
-    public NovopayTopNInvestors add(Person person){
+    public NovopayTopNInvestors add(Investor investor){
         if(root == null){
-            root = new Node<Person>(person);
+            root = new Node<Investor>(investor);
         }else {
-            Node<Person> cur = root;
+            Node<Investor> cur = root;
             while (cur!=null) {
-                if (cur.data.getNetworth() <= person.getNetworth()){
-                    Node<Person> temp = new Node<Person>(person);
+                if (cur.data.getNetworth() <= investor.getNetworth()){
+                    Node<Investor> temp = new Node<Investor>(investor);
                     temp.next = cur;
                     if(cur.prev!=null) {
                         temp.prev = cur.prev;
@@ -34,7 +34,7 @@ public class NovopayTopNInvestors implements TopNInvestors{
 
     public List<String> get(int n){
         List<String> topNInvstorsList = new ArrayList<String>();
-        Node<Person>  cur = root;
+        Node<Investor>  cur = root;
         while (n !=0 && cur!=null){
             topNInvstorsList.add(cur.data.toString());
             cur = cur.next;

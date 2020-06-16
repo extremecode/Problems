@@ -1,11 +1,11 @@
 package com.novopay;
 
-public class Person {
+public class Investor {
     private int id;
     private String name;
     private int networth;
 
-    public Person(int id, String name, int networth) {
+    public Investor(int id, String name, int networth) {
         this.id = id;
         this.name = name;
         this.networth = networth;
@@ -37,7 +37,7 @@ public class Person {
 
     @Override
     public String toString() {
-        return "Person{" +
+        return "Investor{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", networth=" + networth +"L"+

@@ -14,11 +14,11 @@ public class NovopayTopNInvestorsTest {
 
     @Before
     public void setUp() throws Exception {
-        topNInvestors = new NovopayTopNInvestors().add(new Person(1, "mukesh", 10))
-                .add(new Person(2, "suresh", 40))
-                .add(new Person(3, "mahesh", 30))
-                .add(new Person(4, "nidhi", 50))
-                .add(new Person(5, "akash", 20));
+        topNInvestors = new NovopayTopNInvestors().add(new Investor(1, "mukesh", 10))
+                .add(new Investor(2, "suresh", 40))
+                .add(new Investor(3, "mahesh", 30))
+                .add(new Investor(4, "nidhi", 50))
+                .add(new Investor(5, "akash", 20));
     }
 
     @After
@@ -32,9 +32,9 @@ public class NovopayTopNInvestorsTest {
     @Test
     public void get() {
         List<String> top3InvestorList = topNInvestors.get(3);
-        assertEquals("Person{id=4, name='nidhi', networth=50L}",top3InvestorList.get(0));
-        assertEquals("Person{id=2, name='suresh', networth=40L}",top3InvestorList.get(1));
-        assertEquals("Person{id=3, name='mahesh', networth=30L}",top3InvestorList.get(2));
+        assertEquals("Investor{id=4, name='nidhi', networth=50L}",top3InvestorList.get(0));
+        assertEquals("Investor{id=2, name='suresh', networth=40L}",top3InvestorList.get(1));
+        assertEquals("Investor{id=3, name='mahesh', networth=30L}",top3InvestorList.get(2));
     }
 
 }
