@@ -1,4 +1,4 @@
 # Problems
-## topNInvestoros 
-cd topNInvestoros
+## topNInvestors 
+cd topNInvestors
 mvn clean install
