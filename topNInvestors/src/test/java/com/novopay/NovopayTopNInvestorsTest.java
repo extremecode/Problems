@@ -1,4 +1,4 @@
-package com.nopopay;
+package com.novopay;
 
 import static org.junit.Assert.*;
 
@@ -8,13 +8,13 @@ import org.junit.Test;
 
 import java.util.List;
 
-public class NopopayTopNInvestorsTest {
+public class NovopayTopNInvestorsTest {
 
     private TopNInvestors topNInvestors;
 
     @Before
     public void setUp() throws Exception {
-        topNInvestors = new NopopayTopNInvestors().add(new Person(1, "mukesh", 10))
+        topNInvestors = new NovopayTopNInvestors().add(new Person(1, "mukesh", 10))
                 .add(new Person(2, "suresh", 40))
                 .add(new Person(3, "mahesh", 30))
                 .add(new Person(4, "nidhi", 50))

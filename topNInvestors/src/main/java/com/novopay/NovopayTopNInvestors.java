@@ -1,13 +1,13 @@
-package com.nopopay;
+package com.novopay;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class NopopayTopNInvestors implements TopNInvestors{
+public class NovopayTopNInvestors implements TopNInvestors{
 
     Node<Person> root;
 
-    public NopopayTopNInvestors add(Person person){
+    public NovopayTopNInvestors add(Person person){
         if(root == null){
             root = new Node<Person>(person);
         }else {

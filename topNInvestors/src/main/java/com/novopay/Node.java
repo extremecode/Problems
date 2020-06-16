@@ -1,4 +1,4 @@
-package com.nopopay;
+package com.novopay;
 
 public class Node<T> {
     T data;
