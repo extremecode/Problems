@@ -4,5 +4,5 @@ import java.util.List;
 
 public interface TopNInvestors {
     TopNInvestors add(Investor investor);
-    List<String> get(int n);
+    List<Investor> get(int n);
 }

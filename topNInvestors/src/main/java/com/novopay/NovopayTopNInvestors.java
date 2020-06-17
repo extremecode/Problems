@@ -32,11 +32,11 @@ public class NovopayTopNInvestors implements TopNInvestors{
         return this;
     }
 
-    public List<String> get(int n){
-        List<String> topNInvstorsList = new ArrayList<String>();
+    public List<Investor> get(int n){
+        List<Investor> topNInvstorsList = new ArrayList<Investor>();
         Node<Investor>  cur = root;
         while (n !=0 && cur!=null){
-            topNInvstorsList.add(cur.data.toString());
+            topNInvstorsList.add(cur.data);
             cur = cur.next;
             n--;
         }
